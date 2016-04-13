@@ -2,7 +2,7 @@
   "name": "alaska-page",
   "version": "0.1.0",
   "description": "Alaska page service",
-  "main": "index.js",
+  "main": "lib/alaska-page.js",
   "scripts": {
     "build": "babel ./src --out-dir ./lib",
     "watch": "babel ./src --out-dir ./lib -w",
