@@ -5,17 +5,14 @@
  * rong@maichong.it
  */
 
-//'use strict';
 import Page from '../models/Page';
 
-export default async function (ctx) {
+export async function show(ctx) {
   let link = ctx.query.link || '';
-  let result = await Page.findOne({
-    link: link
-  });
-  if (!result) {
-    ctx.body = {};
-    return;
+  if (link) {
+    let page = await Page.findOne({ link });
+    if (page) {
+      ctx.page = page.data();
+    }
   }
-  ctx.body = result;
 }

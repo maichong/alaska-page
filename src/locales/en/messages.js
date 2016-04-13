@@ -5,7 +5,6 @@
  * rong@maichong.it
  */
 
-//'use strict';
 export default {
   'Page': 'Page',
   'Title': 'Title',
@@ -16,5 +15,5 @@ export default {
   'SEO Description': 'SeoDescription',
   'Page Template': 'Page template',
   'Created At': 'Created At',
-  'Case:http://localhost:5000/page-1/': 'case:http://localhost:5000/page-1/'
+  'Page link already exists': 'Page link already exists'
 };

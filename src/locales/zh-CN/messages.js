@@ -5,7 +5,6 @@
  * rong@maichong.it
  */
 
-//'use strict';
 export default {
   'Page': '单页面',
   'Title': '主标题',
@@ -17,5 +16,5 @@ export default {
   'SEO Description': '搜索引擎描述',
   'Page Template': '页面模板',
   'Created At': '创建时间',
-  'Case:http://localhost:5000/page-1/': '例如:http://localhost:5000/page-1/'
+  'Page link already exists': '页面链接重复'
 };

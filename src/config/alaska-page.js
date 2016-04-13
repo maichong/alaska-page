@@ -5,7 +5,6 @@
  * rong@maichong.it
  */
 
-//'use strict';
 export default {
   prefix: '/page',
   controllers: false,

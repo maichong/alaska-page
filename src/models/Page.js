@@ -20,53 +20,50 @@ export default class Page extends service.Model {
       type: String,
       required: true
     },
-    content: {
-      label: 'Content',
-      type: 'html',
-      default: ''
-    },
     link: {
       label: 'Page Link',
       type: String,
-      help: 'Case:http://localhost:5000/page-1/',
-      default: ''
+      index: true
     },
     seoTitle: {
       label: 'SEO Title',
-      type: String,
-      default: ''
+      type: String
     },
     seoKeywords: {
       label: 'SEO Keywords',
-      type: String,
-      default: ''
+      type: String
     },
     seoDescription: {
       label: 'SEO Description',
-      type: String,
-      default: ''
+      type: String
     },
     template: {
       label: 'Page Template',
-      type: String,
-      default: ''
+      type: String
     },
     createdAt: {
       label: 'Created At',
       type: Date
+    },
+    content: {
+      label: 'Content',
+      type: 'html',
+      default: ''
     }
   };
+
   async preSave() {
     if (!this.createdAt) {
       this.createdAt = new Date;
     }
-    let results = await Page.find({
-      link: this.link
-    });
-    if (results || results.length) {
-      console.error('Link Error:Link already exists!');
-      service.error('Link Error:Link already exists!');
-      throw new Error('Link Error:Link already exists!');
+    if (this.link) {
+      let count = await Page.count({
+        link: this.link
+      }).where('_id').ne(this._id);
+
+      if (count) {
+        service.error('Page link already exists');
+      }
     }
   }
 }
