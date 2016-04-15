@@ -1,6 +1,6 @@
 {
   "name": "alaska-page",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "Alaska page service",
   "main": "lib/alaska-page.js",
   "scripts": {
@@ -25,5 +25,10 @@
   "homepage": "https://github.com/maichong/alaska-page#readme",
   "peerDependencies": {
     "alaska": "*"
+  },
+  "dependencies": {
+    "alaska-field-text": "^0.6.0",
+    "alaska-field-html": "^0.7.0",
+    "alaska-field-datetime": "^0.6.0"
   }
 }
