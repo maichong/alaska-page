@@ -2,18 +2,15 @@
  * 脉冲软件
  * http://maichong.it
  * Created by Rong on 16/4/11.
- * rong@maichong.it
+ * chaorong@maichong.it
  */
 
 export default {
-  'Page': 'Page',
-  'Title': 'Title',
-  'Content': 'Content',
-  'Page Link': 'Page link',
-  'SEO Title': 'SeoTitle',
-  'SEO Keywords': 'SeoKeywords',
-  'SEO Description': 'SeoDescription',
-  'Page Template': 'Page template',
-  'Created At': 'Created At',
-  'Page link already exists': 'Page link already exists'
+  Page: 'Page',
+  Title: 'Title',
+  Content: 'Content',
+  'SEO Title': 'Seo Title',
+  'SEO Keywords': 'Seo Keywords',
+  'SEO Description': 'Seo Description',
+  'Page Template': 'Page template'
 };

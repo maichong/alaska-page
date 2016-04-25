@@ -6,15 +6,12 @@
  */
 
 export default {
-  'Page': '单页面',
-  'Title': '主标题',
-  'Summary': '摘要',
-  'Content': '内容',
-  'Page Link': '页面链接地址',
-  'SEO Title': '搜索引擎标题',
-  'SEO Keywords': '搜索引擎关键字',
-  'SEO Description': '搜索引擎描述',
-  'Page Template': '页面模板',
-  'Created At': '创建时间',
-  'Page link already exists': '页面链接重复'
+  Page: '单页面',
+  Title: '主标题',
+  Summary: '摘要',
+  Content: '内容',
+  'SEO Title': 'SEO标题',
+  'SEO Keywords': 'SEO关键字',
+  'SEO Description': 'SEO描述',
+  'Page Template': '页面模板'
 };

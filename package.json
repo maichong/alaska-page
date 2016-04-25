@@ -1,6 +1,10 @@
 {
   "name": "alaska-page",
-  "version": "0.8.2",
+  "version": "0.9.0",
+  "keywords": [
+    "alaska",
+    "alaska-service"
+  ],
   "description": "Alaska page service",
   "main": "lib/alaska-page.js",
   "scripts": {
@@ -27,8 +31,8 @@
     "alaska": "*"
   },
   "dependencies": {
-    "alaska-field-text": "^0.8.0",
-    "alaska-field-html": "^0.8.0",
-    "alaska-field-datetime": "^0.8.0"
+    "alaska-field-text": "^0.9.0",
+    "alaska-field-html": "^0.9.0",
+    "alaska-field-datetime": "^0.9.0"
   }
 }
