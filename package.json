@@ -31,8 +31,8 @@
     "alaska": "*"
   },
   "dependencies": {
-    "alaska-field-text": "^0.9.0",
+    "alaska-field-text": "^0.9.1",
     "alaska-field-html": "^0.9.0",
-    "alaska-field-datetime": "^0.9.0"
+    "alaska-field-datetime": "^0.9.1"
   }
 }

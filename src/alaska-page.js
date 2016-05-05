@@ -13,8 +13,8 @@ import alaska from 'alaska';
 export default class PageService extends alaska.Service {
   constructor(options, alaska) {
     options = options || {};
-    options.id = 'alaska-page';
-    options.dir = __dirname;
+    options.dir = options.dir || __dirname;
+    options.id = options.id || 'alaska-page';
     super(options, alaska);
   }
 }
