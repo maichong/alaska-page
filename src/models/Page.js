@@ -7,7 +7,7 @@
 
 export default class Page extends service.Model {
   static label = 'Page';
-  static defaultColumns = '_id,title,createdAt';
+  static defaultColumns = '_id title createdAt';
   static defaultSort = '-createdAt';
   static searchFields = 'title';
 
