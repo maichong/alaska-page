@@ -5,8 +5,11 @@
  * chaorong@maichong.it
  */
 
-export default class Page extends service.Model {
+import alaska from 'alaska';
+
+export default class Page extends alaska.Model {
   static label = 'Page';
+  static icon = 'file-text';
   static defaultColumns = '_id title createdAt';
   static defaultSort = '-createdAt';
   static searchFields = 'title';
